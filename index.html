@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>TripArounds</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+    <!--bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!--owl carousel css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <!--lightbox css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/lightbox.min.css">
+    <!--animated headline css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/animated-headline.css">
+    <!--icofont css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/icofont.min.css">
+    <!--magnific popup js-->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+    <!--animate css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!--main css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--responsive css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!--start preloader
+    <div class="preloader">
+        <div class="preloader d-table">
+            <div class="d-table-cell align-middle">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!--end preloader-->
+    <!--start header-->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!--Main Logo-->
+                    <a class="logo" href="#"><img class="logo1" src="assets/images/logo.webp" alt="logo"> </a>
+                    <!--Scroll Logo-->
+                    <a class="logo-scroll" href="#"><img class="logo2" src="assets/images/logo.webp" alt="logo"> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"><i class="icofont-navigation-menu"></i></span>
+                    </button>
+
+                    <!-- navbar links -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase active" href="../">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="Vacaciones" >Vacaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="Nosotros">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="Informacion">Informacion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="Contacto" >Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--end header-->
+    <!--start home area-->
+    <section id="home-area" data-scroll-index="0" style="background-image: url(assets/images/banner4.jpg)">
+        <div class="home-overlay"></div>
+        <div class="container">
+            <!--start content-->
+            <div class="caption d-table">
+                <div class="d-table-cell align-middle">
+                    <h4>Reserve su Viaje</h4>
+                    <h1 class="cd-headline clip"><span></span>
+                        <span class="cd-words-wrapper color-base">
+                            <b class="is-visible">Vuelos</b>
+                            <b>Vacaciones</b>
+                            <b>Cruceros</b>
+                            <b>Hoteles</b>
+                            <b>Excursiones</b>
+                            <b>Otros</b>
+                        </span>
+                    </h1>
+                    <p>Encuentra Muchas Ofertas de Vuelos. Compara Precios y Reserva tu Pasaje Barato. La mejor agencia de viajes. Sin cargos adicionales. Encuentra tu vuelo ideal. Reserva rápido y fácil. Rastrea tu vuelo. Reserva vuelo + hotel. Mejores precios en línea.</p>
+                    <a class="bg" href="#">Reserve su Viaje</a><a href="#contact">Contactenos</a>
+                </div>
+            </div>
+            <!--end content-->
+        </div>
+    </section>
+    <!--end home area-->
+    <!--start about area-->
+    <section id="about-area" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <!--start about image-->
+                <div class="col-lg-6">
+                    <!--start contact form-->
+                    <div class="col-lg-12 col-md-12">
+                        <div class="contact-form" style="background: #00c9d5;">
+                            <form action="contact.php" method="post" id="ajax-contact">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="noheight">
+                                            <div class="col-md-4 inline-block">
+                                                <input type="checkbox" name=""><label> Vuelos</label><br>
+                                                <input type="checkbox" name=""><label> Hotel</label><br>
+                                                <input type="radio" id="contactChoice1"name="contact" value="email" checked>
+                                                <label>Ida y Vuelta </label>
+                                            </div>
+                                            <div class="col-md-4 inline-block">
+                                                <input type="checkbox" name=""><label> Vacaciones</label><br>
+                                                <input type="checkbox" name=""><label> Excursiones</label><br>
+                                                <input type="radio" id="contactChoice2" name="contact" value="phone">
+                                            <label> Solo ida</label>
+                                            <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="col-md-4 inline-block">
+                                                <input type="checkbox" name=""><label> Cruceros</label><br>
+                                                <input type="checkbox" name=""><label> Otro</label>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="ciudad" name="name" placeholder="Ciudad de salida*" required="required" data-error="Ciudad es requerida.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="date" class="form-control" id="name" name="name" placeholder="Fecha de salida*" required="required" data-error="Fecha de salida es requerida." title="Fecha de salida">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="ciudad" name="name" placeholder="Ciudad de llegada*" required="required" data-error="Ciudad es requerida.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="date" class="form-control" id="name" name="name" placeholder="Fecha de salida*" required="required" data-error="Fecha de Regreso es requerida." title="Fecha de Regreso">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Name*" required="required" data-error="name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email*" required="required" data-error="valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" id="name" name="name" placeholder="Numero de pasajeros*" required="required" data-error="numero de pasajeros.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email*" required="required" data-error="valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <button type="submit">Enviar Solicitud</button>
+                                    </div>
+                                </div>
+                                <div class="messages"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--end contact form-->
+                </div>
+                <!--end about image-->
+                <!--start about content-->
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>Reserve su Viaje</h2>
+                        <iframe height="500" width="100%" allowfullscreen="" frameborder="0" title="External Vimeo" aria-label="External Vimeo" src="//player.vimeo.com/video/300105561?autoplay=false&amp;loop=false&amp;byline=false&amp;portrait=false&amp;title=false"></iframe>
+                    </div>
+                </div>
+                <!--end about content-->
+            </div>
+        </div>
+    </section>
+    <!--end about area-->
+    <!--start service area-->
+    <section id="service-area" data-scroll-index="2">
+        <div class="container">
+            <div class="row">
+                <!--start section heading-->
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                    <div class="section-heading">
+                        <h2>VUELOS BARATOS <br><span>Saliendo de Houston.TX</span></h2>
+                        <p>A solo un Clic.  Puedes Reservar Hoy.! y Pagar Mañana. Aprovecha nuestros planes de Pagos en Paquetes Vacacionales.! -Oferta Exclusiva de Trip Arounds-</p>
+                    </div>
+                </div>
+                <!--end section heading-->
+            </div>
+            <div class="row">
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/mex.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >MEXICO DF. Desde: </h5>
+                            <p class="fondoa">224$</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/sal.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >SAN SALVADOR Desde: </h5>
+                            <p class="fondoa">270$</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/lah.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >LA HABANA Desde: </h5>
+                            <p class="fondoa">361</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/gua.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >GUATEMALA Desde:  </h5>
+                            <p class="fondoa">165$</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/mex.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >MEXICO DF. Desde: </h5>
+                            <p class="fondoa">224$</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/sal.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >SAN SALVADOR Desde: </h5>
+                            <p class="fondoa">270$</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/lah.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >LA HABANA Desde: </h5>
+                            <p class="fondoa">361</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/gua.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >GUATEMALA Desde:  </h5>
+                            <p class="fondoa">165$</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/mex.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >MEXICO DF. Desde: </h5>
+                            <p class="fondoa">224$</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/sal.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >SAN SALVADOR Desde: </h5>
+                            <p class="fondoa">270$</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/lah.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >LA HABANA Desde: </h5>
+                            <p class="fondoa">361</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-3">
+                    <div class="sip service-single">
+                        <div class="col-md-12">
+                            <img class="col-md-12 nop" src="assets/images/gua.webp">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 >GUATEMALA Desde:  </h5>
+                            <p class="fondoa">165$</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+
+            </div>
+
+        </div>
+    </section>
+    <!--end service area-->
+    <!--end counter area-->
+    <section id="service-area" data-scroll-index="2">
+        <div class="container">
+            <div class="row">
+                <!--start section heading-->
+                <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2">
+                    <div class="section-heading">
+                        <h2>¿Por que <span>Preferirnos?</span></h2>
+                        <p>Esta es la razón por la que nuestros clientes prefieren a <br>Trip Arounds  como su Agencia de Viajes de Confianza</p>
+                    </div>
+                </div>
+                <!--end section heading-->
+            </div>
+            <div class="row">
+                <!--start service single-->
+                <div class="col-md-6">
+                    <div class="service-single">
+                        <div class="icon">
+                            <span><i class="icofont-laptop-alt"></i></span>
+                        </div>
+                        <div class="content">
+                            <h5>DESDE LA COMODIDAD DE SU CASA</h5>
+                            <p>Podrás observar nuestras ofertas y escoger el plan que más se ajuste a su medida. contactar con un asesor y Solicitar una Cotización. Es Gratis.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-6">
+                    <div class="service-single">
+                        <div class="icon">
+                            <span><i class="icofont-code"></i></span>
+                        </div>
+                        <div class="content">
+                            <h5>PERSONAL CALIFICADO</h5>
+                            <p>Todos nuestros asesores están certificados por la ASTA (American Society of Travel Agent). Si tiene alguna duda nuestros Expertos podrán ayudarle. </p>
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+                <!--start service single-->
+                <div class="col-md-6">
+                    <div class="service-single">
+                        <div class="icon">
+                            <span><i class="icofont-star"></i></span>
+                        </div>
+                        <div class="content">
+                            <h5>CALIFICA NUESTRO SERVICIO</h5>
+                            <p>En TripArounds la opinión de nuestros clientes vale mucho, por eso, valoramos tanto nuestro compromiso. Su satisfacción es nuestro mejor trabajo. Por eso agradecemos por sus comentarios.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+
+                <!--start service single-->
+                <div class="col-md-6">
+                    <div class="service-single  white">
+                        <img class="hot" src="assets/images/hot.png">
+                        <div class="icon">
+                            <span><i class="icofont-money"></i></span>
+                        </div>
+                        <div class="content">
+                            <h5>AHORRE hasta un 50%</h5>
+                            <p>En TripArounds Al Reservar sus vacaciones con 90 dias de Anticipacion puede ahorrar hasta un 50% en nuestros paquetes Esta es una de las razónes por la que nuestros clientes prefieren a Trip Arounds  como su Agencia de Viajes de Confianza</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end service single-->
+            </div>
+        </div>
+    </section>
+    <!--start project area-->
+    <section id="project-area" data-scroll-index="3">
+        <div class="container">
+            <div class="row">
+                <!--start section heading-->
+                <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+                    <div class="section-heading text-center">
+                        <h2>¿Estás pensando en <br> <span>Descubrir el Mundo.?</span></h2>
+                        <p>cuando se trata de viajes. ya sean. planificados o simplemente ,esa aventura, que se salió de repente. Te ayudaremos a elegir ese destino al que tanto deseas ir..!
+                        Solo, acompañado o en Grupo?. Qué mejor manera de iniciar esta experiencia que Aquí. Y además sabemos lo que quieres, te ayudaremos a viajar de la manera más barata posible. Ya sea que:  Viajes frecuentemente  -lejos? - cerca? Pues.. a donde quieras ir... Siempre encontrar tickets de avión baratos es una tarea difícil, por eso, es mejor dejarlo en nuestras manos.</p>
+                    </div>
+                </div>
+                <!--end section heading-->
+            </div>
+            <div class="row">
+                <div class="project-menu text-center">
+                    <button class="active" data-filter="*">All</button>
+                    <button data-filter=".cat1">Vuelos</button>
+                    <button data-filter=".cat2">Hoteles</button>
+                    <button data-filter=".cat3">Turismo</button>
+                </div>
+            </div>
+            <!--start project items-->
+            <div class="project-items row">
+                <!--start project single-->
+                <div class="col-md-4 grid-item cat2">
+                    <div class="project-single">
+                        <img src="assets/images/h1.jpg" class="img-fluid" alt="">
+                        <div class="project-overlay">
+                            <div class="icon">
+                                <a href="assets/images/port-1.jpg" data-lightbox="roadtrip"><i class="icofont-plus"></i></a>
+                            </div>
+                            <h5>Project Name</h5>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end project single-->
+                <!--start project single-->
+                <div class="col-md-4 grid-item cat2">
+                    <div class="project-single">
+                        <img src="assets/images/h1.jpg" class="img-fluid" alt="">
+                        <div class="project-overlay">
+                            <div class="icon">
+                                <a href="assets/images/port-1.jpg" data-lightbox="roadtrip"><i class="icofont-plus"></i></a>
+                            </div>
+                            <h5>Project Name</h5>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end project single-->
+                <!--start project single-->
+                <div class="col-md-4 grid-item cat2">
+                    <div class="project-single">
+                        <img src="assets/images/h1.jpg" class="img-fluid" alt="">
+                        <div class="project-overlay">
+                            <div class="icon">
+                                <a href="assets/images/port-1.jpg" data-lightbox="roadtrip"><i class="icofont-plus"></i></a>
+                            </div>
+                            <h5>Project Name</h5>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end project single-->
+                <!--start project single-->
+                <div class="col-md-4 grid-item cat2">
+                    <div class="project-single">
+                        <img src="assets/images/h1.jpg" class="img-fluid" alt="">
+                        <div class="project-overlay">
+                            <div class="icon">
+                                <a href="assets/images/port-1.jpg" data-lightbox="roadtrip"><i class="icofont-plus"></i></a>
+                            </div>
+                            <h5>Project Name</h5>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end project single-->
+                <!--start project single-->
+                <div class="col-md-4 grid-item cat2">
+                    <div class="project-single">
+                        <img src="assets/images/h2.jpg" class="img-fluid" alt="">
+                        <div class="project-overlay">
+                            <div class="icon">
+                                <a href="assets/images/port-2.jpg" data-lightbox="roadtrip"><i class="icofont-plus"></i></a>
+                            </div>
+                            <h5>Project Name</h5>
+                            <p>Development</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end project single-->
+                <!--start project single-->
+                <div class="col-lg-4 col-md-4 grid-item cat2">
+                    <div class="project-single">
+                        <img src="assets/images/h3.jpg" class="img-fluid" alt="">
+                        <div class="project-overlay">
+                            <div class="icon">
+                                <a href="assets/images/port-3.jpg" data-lightbox="roadtrip"><i class="icofont-plus"></i></a>
+                            </div>
+                            <h5>Project Name</h5>
+                            <p>Design</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end project single-->
+                <!--start project single-->
+                <div class="col-lg-4 col-md-6 grid-item cat2 cat2">
+                    <div class="project-single">
+                        <img src="assets/images/port-4.jpg" class="img-fluid" alt="">
+                        <div class="project-overlay">
+                            <div class="icon">
+                                <a href="assets/images/port-4.jpg" data-lightbox="roadtrip"><i class="icofont-plus"></i></a>
+                            </div>
+                            <h5>Project Name</h5>
+                            <p>Development</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end project single-->
+                <!--start project single-->
+                <div class="col-lg-4 col-md-6 grid-item cat3">
+                    <div class="project-single">
+                        <img src="assets/images/port-5.jpg" class="img-fluid" alt="">
+                        <div class="project-overlay">
+                            <div class="icon">
+                                <a href="assets/images/port-5.jpg" data-lightbox="roadtrip"><i class="icofont-plus"></i></a>
+                            </div>
+                            <h5>Project Name</h5>
+                            <p>Design</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end project single-->
+            </div>
+            <!--end project items-->
+        </div>
+    </section>
+    <!--end project area-->
+    <!--start testimonial area-->
+    <section id="testimonial-area">
+        <div class="testi-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Algunos de nuestros clientes</h2>
+                    <!--start testimonial carousel-->
+                    <div class="testimonial-carousel owl-carousel">
+                        <!--start testimonial single-->
+                        <div class="testimonial-single">
+                            <div class="client-info text-center">
+                                <img src="assets/images/T1.jpg" class="img-fluid" alt="">
+                                <h5>Erika Sorto</h5>
+                                <p>Jun 30, 2017 </p>
+                            </div>
+                            <div class="client-comment">
+                                <p><i class="icofont-quote-left"></i></p>
+                                <p>Excelente servicio en todos los aspecto, d mi parte estoy muy contenta con el servicio mil gracias x todo... les deseo mucho éxito he bendiciones</p>
+                            </div>
+                        </div>
+                        <!--end testimonial single-->
+                        <!--start testimonial single-->
+                        <div class="testimonial-single">
+                            <div class="client-info text-center">
+                                <img src="assets/images/T2.jpg" class="img-fluid" alt="">
+                                <h5>Yanisel Santos </h5>
+                                <p>Jun 30, 2017 </p>
+                            </div>
+                            <div class="client-comment">
+                                <p><i class="icofont-quote-left"></i></p>
+                                <p>Ésta agencia es maravillosa obtuve el boleto que buscaba a un precio excelente y el trato fue espectacular sé las recomiendo</p>
+                            </div>
+                        </div>
+                        <!--end testimonial single-->
+                        <!--start testimonial single-->
+                        <div class="testimonial-single">
+                            <div class="client-info text-center">
+                                <img src="assets/images/T3.jpg" class="img-fluid" alt="">
+                                <h5>Damian Marrero   </h5>
+                                <p>Jul 1, 2017 </p>
+                            </div>
+                            <div class="client-comment">
+                                <p><i class="icofont-quote-left"></i></p>
+                                <p>Excelente y sus trabajadores super atentos y educados un trato maravilloso</p>
+                            </div>
+                        </div>
+                        <!--end testimonial single-->
+                        <!--start testimonial single-->
+                        <div class="testimonial-single">
+                            <div class="client-info text-center">
+                                <img src="assets/images/T4.jpg" class="img-fluid" alt="">
+                                <h5>German Andres Turcios</h5>
+                                <p>Jul 4, 2018 </p>
+                            </div>
+                            <div class="client-comment">
+                                <p><i class="icofont-quote-left"></i></p>
+                                <p>Gente muy amable y ayudan a encontrar precios baratos.</p>
+                            </div>
+                        </div>
+                        <!--end testimonial single-->
+                    </div>
+                    <!--end testimonial carousel-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end testimonial area-->
+    <!--start partner area-->
+    <section id="partner-area">
+        <div class="container">
+            <div class="partner-carousel owl-carousel">
+                <img src="assets/images/1.webp" class="img-fluid" alt="">
+                <img src="assets/images/2.webp" class="img-fluid" alt="">
+                <img src="assets/images/3.webp" class="img-fluid" alt="">
+                <img src="assets/images/4.webp" class="img-fluid" alt="">
+                <img src="assets/images/5.webp" class="img-fluid" alt="">
+                <img src="assets/images/6.webp" class="img-fluid" alt="">
+            </div>
+        </div>
+    </section>
+    <!--end partner area-->
+    <!--start footer-->
+    <footer id="footer">
+        <div class="container">
+            <ul>
+                <li><a href=""><i class="icofont-facebook"></i></a></li>
+                <li><a href=""><i class="icofont-twitter"></i></a></li>
+                <li><a href=""><i class="icofont-google-plus"></i></a></li>
+                <li><a href=""><i class="icofont-pinterest"></i></a></li>
+            </ul>
+            <div class="col-md-3 inline-block text-left whitefooter">
+                <p>VIAJEROS</p>
+                <ul>
+                    <li>Consejos Utiles</li><br>
+                    <li>Mochileros</li><br>
+                    <li>Equipos Deportivos</li><br>
+                </ul>
+            </div>
+            <div class="col-md-3 inline-block text-left whitefooter">
+                <p>INFORMATE</p>
+                <ul>
+                    <li>Noti-Travel</li><br>
+                    <li>Galeria De Fotos</li><br>
+                </ul>
+            </div>
+            
+            <div class="col-md-3 inline-block text-left whitefooter">
+                <p>SERVICIOS AL CLIENTE</p>
+                <ul>
+                    <li>Derecho de los Pasajeros</li><br>
+                    <li>Contactenos</li><br>
+                </ul>
+            </div>
+            <div class="col-md-3 inline-block text-left whitefooter">
+                <p>DOCUMENTOS</p>
+                <ul>
+                    <li>Autorizacion Targeta Deb/cred</li><br>
+                </ul>
+            </div>
+            <p>&copy; 2018 All Rights Reserved By <a href=TripArounds.com">TripArounds</a></p>
+
+        </div>
+    </footer>
+    <!--end footer-->
+
+    <!--jQuery js-->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!--google map api key-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4yKUBz0tTKwfw8zY8mYOR7MAZy9coIMg&callback" async defer></script>
+    <!--custom google map js-->
+    <script src="assets/js/map-scripts.js"></script>
+    <!--proper js-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--bootstrap JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Counter JS-->
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+    <!--lightbox js-->
+    <script src="assets/js/lightbox.min.js"></script>
+    <!--isotope js-->
+    <script src="assets/js/isotope.min.js"></script>
+    <!--image loded js-->
+    <script src="assets/js/images-loded.min.js"></script>
+    <!--owl carousel js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--animated headline js-->
+    <script src="assets/js/animated-headline.js"></script>
+    <!--magnific popup js-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!--scrollIt js-->
+    <script src="assets/js/scrollIt.min.js"></script>
+    <!--validator js-->
+    <script src="assets/js/validator.min.js"></script>
+    <!--contact js-->
+    <script src="assets/js/contact.js"></script>
+    <!--custom js-->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
